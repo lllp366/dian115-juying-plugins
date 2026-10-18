@@ -9,12 +9,12 @@
     {
       "id": "custom.juying-search",
       "name": "聚影资源搜索",
-      "version": "1.0.2",
+      "version": "1.1.0",
       "description": "搜索聚影（juying.top）站内与 PanSou 的聚合资源，115 网盘优先展示，一键把影片加入 DIAN115 聚合订阅。",
       "author": "DIAN115 自定义",
       "homepage": "https://www.jying.top",
-      "package_url": "https://cdn.jsdelivr.net/gh/lllp366/dian115-juying-plugins@v1.0.2/plugins/custom.juying-search-1.0.2.d115p",
-      "sha256": "8c358202d3d4668a0d307334767f174bacf1fdb2841c71bbc04e6b912198bd11",
+      "package_url": "https://cdn.jsdelivr.net/gh/lllp366/dian115-juying-plugins@v1.1.0/plugins/custom.juying-search-1.1.0.d115p",
+      "sha256": "a2b78a7b2642716b6d80137578a5a6a21565e10eb73786ca786b3c2bfdb507f6",
       "runtime": {
         "kind": "wasm",
         "protocol": "dian115:wasm@1",
@@ -42,6 +42,16 @@
             "method": "POST",
             "path": "/api/subscribe/pool/intents",
             "reason": "把用户点选的影片加入 DIAN115 聚合订阅"
+          },
+          {
+            "method": "POST",
+            "path": "/api/115/share/receive",
+            "reason": "把用户选中的 115 分享转存到本账号"
+          },
+          {
+            "method": "GET",
+            "path": "/api/subscribe/pool/intents",
+            "reason": "检查影片是否已在订阅池，避免重复订阅"
           }
         ],
         "network": [
