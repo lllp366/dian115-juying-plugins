@@ -9,12 +9,12 @@
     {
       "id": "custom.juying-search",
       "name": "聚影资源搜索",
-      "version": "1.0.1",
-      "description": "搜索聚影（juying.top）站内与 PanSou 的聚合资源，115 网盘优先展示，一键加入 DIAN115 聚合订阅。",
+      "version": "1.0.2",
+      "description": "搜索聚影（juying.top）站内与 PanSou 的聚合资源，115 网盘优先展示，一键把影片加入 DIAN115 聚合订阅。",
       "author": "DIAN115 自定义",
       "homepage": "https://www.jying.top",
-      "package_url": "https://cdn.jsdelivr.net/gh/lllp366/dian115-juying-plugins@v1.0.1/plugins/custom.juying-search-1.0.1.d115p",
-      "sha256": "4dbe558a80a4be985a44417e590abf61a98654268cb3106757c163b11f509fdb",
+      "package_url": "https://cdn.jsdelivr.net/gh/lllp366/dian115-juying-plugins@v1.0.2/plugins/custom.juying-search-1.0.2.d115p",
+      "sha256": "8c358202d3d4668a0d307334767f174bacf1fdb2841c71bbc04e6b912198bd11",
       "runtime": {
         "kind": "wasm",
         "protocol": "dian115:wasm@1",
@@ -48,7 +48,8 @@
           {
             "origin": "https://www.jying.top",
             "methods": [
-              "GET"
+              "GET",
+              "POST"
             ],
             "proxy_mode": "system",
             "reason": "只读调用聚影开发者接口：聚合搜索与影片/TMDB 信息"
