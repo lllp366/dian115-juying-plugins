@@ -9,12 +9,12 @@
     {
       "id": "custom.juying-search",
       "name": "聚影资源搜索",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "description": "搜索聚影（juying.top）站内与 PanSou 的聚合资源，115 网盘优先展示，一键把影片加入 DIAN115 聚合订阅。",
       "author": "DIAN115 自定义",
       "homepage": "https://www.jying.top",
-      "package_url": "https://ghfast.top/https://raw.githubusercontent.com/lllp366/dian115-juying-plugins/main/plugins/custom.juying-search-1.1.1.d115p",
-      "sha256": "63f6a84f48c012b8b62dd7771614cd2c8e2e95b940d849ea1d4a21e81f0faa73",
+      "package_url": "https://ghfast.top/https://raw.githubusercontent.com/lllp366/dian115-juying-plugins/main/plugins/custom.juying-search-1.1.2.d115p",
+      "sha256": "c43f4bedbdfa34a6a90564272e2926eca854505f5b89c97f6034c4e3538a5781",
       "runtime": {
         "kind": "wasm",
         "protocol": "dian115:wasm@1",
