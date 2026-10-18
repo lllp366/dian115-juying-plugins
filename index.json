@@ -25,7 +25,36 @@
         "juying",
         "search",
         "subscription"
-      ]
+      ],
+      "permissions": {
+        "apis": [
+          {
+            "method": "GET",
+            "path": "/api/plugin-runtime/storage/:key",
+            "reason": "读取已保存的聚影 App-Id 与 API Key"
+          },
+          {
+            "method": "PUT",
+            "path": "/api/plugin-runtime/storage/:key",
+            "reason": "保存聚影 App-Id 与 API Key"
+          },
+          {
+            "method": "POST",
+            "path": "/api/subscribe/pool/intents",
+            "reason": "把用户点选的影片加入 DIAN115 聚合订阅"
+          }
+        ],
+        "network": [
+          {
+            "origin": "https://www.jying.top",
+            "methods": [
+              "GET"
+            ],
+            "proxy_mode": "system",
+            "reason": "只读调用聚影开发者接口：聚合搜索与影片/TMDB 信息"
+          }
+        ]
+      }
     }
   ]
 }
