@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "repository": "dian115-juying-plugins",
+  "plugins": [
+    {
+      "id": "custom.juying-search",
+      "name": "聚影资源搜索",
+      "version": "1.0.0",
+      "description": "搜索聚影（juying.top）站内与 PanSou 的聚合资源，115 网盘优先展示，一键加入 DIAN115 聚合订阅。",
+      "author": "DIAN115 自定义",
+      "homepage": "https://www.jying.top",
+      "package_url": "https://raw.githubusercontent.com/USER/REPO/main/plugins/custom.juying-search-1.0.0.d115p",
+      "sha256": "b9821568ac376eb7d68dc1ad68d12045cb22b363a18dcd22741cd6c70a2aa8e2",
+      "runtime": { "kind": "wasm", "protocol": "dian115:wasm@1", "autostart": true, "trust_level": "wasm-sandbox" },
+      "tags": ["juying", "search", "subscription"]
+    }
+  ]
+}
